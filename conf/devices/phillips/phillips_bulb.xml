@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+    <item id="meta">
+        <meta info="Phillips Hue light bulb." xmlns="http://jabber.org/protocol/mio" type="device" name="Hue Lamp 3" >
+            <property value="Hue Bulb" name="type"/>
+            <property value="[ID of the bulb] (required) " name="Bulb ID"/>
+            <property value="[Name of the bulb] (optional)" name="Bulb Name"/>
+            <transducer ="Lighting State" unit="Enum">
+                <map value="0" name="False"/>
+                <map value="1" name="True"/>
+            </transducer>
+            <transducer maxValue="255" minValue="0" type="brightness light" 
+                unit="Brightness Value" interface="Brightness" name="Brightness"/>
+            <transducer maxValue="65535" minValue="0" type="hue light" 
+                unit="Hue" interface="Hue" name="Hue"/>
+            <transducer maxValue="255" minValue="0" type="saturation light" 
+                unit="Saturation" interface="Saturation" name="Saturation"/>
+            <transducer maxValue="65535" minValue="0" 
+                unit="Color Temperature" interface="Color Temperature" name="Color Temperature"/>
+        </meta>
+    </item>
+</items>
+	

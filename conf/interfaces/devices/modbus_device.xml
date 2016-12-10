@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item id="meta" >
+		<meta name="Modbus Device" type="interface" xmlns="http://jabber.org/protocol/mio">
+			<interface name="Modbus Device"/>
+			<property name="Modbus Type" value="[Either RTU or TCP] (required)"/>
+			<property name="Modbus Address" value="[Slave address of modbus device] (optional)"/>
+			<property name="Domain" value="[Default domain in case of ModbusTCP] (optional)"/>
+			<property name="Port" value="[Default domain in case of ModbusTCP] (optional)"/>
+			<transducer>
+				<property name="Register Address" value="[Address of register.](required)"/>	
+                <property name="Register Type" value="[Type of register value. HIGH_BYTE,LOW_BYTE,FLOAT, FLOAT_REVERSED, INT16, INT32 | Defualt INT16](optional)"/>	
+                <property name="Register Length" value="Length of register if not apparent inherently, such as strings.] (optional)"/>
+				<property name="Register Scale" value="[Type of register value. ENUM, FE2,SFE2,SPLIT_BYTE,PE2,GE2,INT,BM | Defualt 1] (optional)"/>	
+			</transducer>
+		</meta>
+	</item>
+</items>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<items>
+	<item name="meta">
+		<meta xmlns="http://jabber.org/protocol/mio" interface="general/error"> 
+			<transducer name="Error" unit="enum">
+				<enum name="OK" value="0"/>
+			</transducer>
+		</meta>
+	</item>
+</items>

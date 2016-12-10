@@ -1,0 +1,11 @@
+<items node="3576d4de-df03-11e4-bff8-838134e24f64">
+    <item id="meta">
+        <meta info="Phillips Hue bridge." name="Phillips Adapter" type="adapter">
+            <interface name="Hue Bridge"/>
+            <property value="Hue Bridge" name="Type"/>
+            <property value="[User ID of adapter bridge account] (required)" name="Bridge User"/> 
+            <property value="[local ip address of the Hue Gateway] (optional)" name="IP Address"/>
+            <property value="[ID of hue bridge] (optional)" name="Bridge ID"/>
+        </meta>
+    </item>
+</items>

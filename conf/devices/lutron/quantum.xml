@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item name="meta">
+<meta name="Lutron Quantum" type="Device" info="A Lutron Quantum Lighting area" xmlns="http://jabber.org/protocol/mio">
+    <interface name="BACnetIP Device"/>
+    <interface name="Light"/>
+    <interface name="Dimmable"/>
+    <interface name="Type" value="BACnetIP Device"/>
+    <property name="BACnet ID" value="[BACnet ID of Device] (required)"/>
+    <property name="Device Image" value="http://sensor.andrew.cmu.edu/device-imgs/lutron_area.jpg\"/>
+    <transdcuer name="Lighting State" unit="Enum">
+        <map value="0" name="Off"/>
+        <map value="1" name="On"/>
+        <property name="Object ID" value="3"/>
+	<property name="Object Type" value="BV"/>
+	<property name="Object Name" value="Lighting State"/>
+    </transducer>
+    <transdcuer name="Lighting Level" unit="Percentage" minValue="0" maxValue="100">
+        <property name="Object ID" value="2"/>
+	<property name="Object Type" value="AV"/>
+	<property name="Object Name" value="Lighting Level"/>
+    </transducer>
+    <transdcuer name="Daylighting Enabled" unit="Enum">
+        <map value="0" name="Off"/>
+        <map value="1" name="On"/>
+        <property name="Object ID" value="5"/>
+	<property name="Object Type" value="BV"/>
+	<property name="Object Name" value="Daylighting Enabled"/>
+    </transducer>
+    <transdcuer name="Permanently Disable Occupancy" unit="Enum">
+        <map value="0" name="Off"/>
+        <map value="1" name="On"/>
+        <property name="Object ID" value="7"/>
+	<property name="Object Type" value="BV"/>
+	<property name="Object Name" value="Permanently Disable Occupancy"/>
+    </transducer>
+    <transdcuer name="Loadshed Allowed" unit="Enum">
+        <map value="0" name="Off"/>
+        <map value="1" name="On"/>
+        <property name="Object ID" value="12"/>
+	<property name="Object Type" value="BV"/>
+	<property name="Object Name" value="Loadshed Allowed"/>
+    </transducer>
+     <transdcuer name="Loadshed Goal" unit="Percentage" minValue="0" maxValue="100">
+        <property name="Object ID" value="13"/>
+        <property name="Object Type" value="AV"/>
+        <property name="Object Name" value="Loadshed Goal"/>
+    </transducer>
+     <transdcuer name="Total Power" unit="kWh" minValue="0" maxValue="10">
+        <property name="Object ID" value="18"/>
+        <property name="Object Type" value="AV"/>
+        <property name="Object Name" value="Total power"/>
+    </transducer>
+</meta>
+</item>
+</items>

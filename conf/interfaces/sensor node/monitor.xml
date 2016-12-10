@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item name="meta">
+		<meta name= type="interface" xmlns="http://jabber.org/protocol/mio">
+			<interface name="Monitor"/>
+			<transducer name="reachable" unit="Enum">
+				<enum name="Unreachable" value="0"/>	
+				<enum name="Reachable" value="1"/>	
+			</transducer>
+		</meta>
+	</item>
+</items>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item id="meta">
+    <meta info="A firefly gpio for relay control." xmlns="http://jabber.org/protocol/mio" type="Device" name="Firefly GPIO">
+         <transducer type="State of relay." unit="enum" interface="Relay State" name="Relay State">
+            <map value="0" name="Off"/>
+            <map value="1" name="On"/>
+	    <property name-"dataLen" value="1"/>
+	    <property name-"dataOffset" value="1"/>
+        </transducer>
+	 <property value="Firefly Environmental name="Type"/>
+         <property value="[Mac address of the firefly device] (required)" name="Mac Address"/>
+         <property value="[Channel of the firefly device] (required)" name="Channel"/> Sensor" name="Type"/>
+    </meta>
+</item>
+</items>

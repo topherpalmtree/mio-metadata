@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item id="meta">
+		<meta xmlns="http://jabber.org/protocol/mio" type="adapter" name="Z-Wave Adapter">
+			<interface name="Zwave Adapter"/>
+			<property name="Polling Interval" value="[Interal in milliseconds of when to poll devices | Default 500ms] (optional)"/>
+			<property name="BACnet ID" value="[BACnet ID of Device] (required)"/>
+			<property name="Domain" value="[Domain or address of BACnet device] (required)"/>
+		</meta>
+	</item>
+</items>

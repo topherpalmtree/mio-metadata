@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item>
+		<meta name="battery" type="interface" xmlns="http://jabber.org/protocol/mio"> 
+			<interface value="Battery"/>
+			<transducer name="Battery Voltage" unit="Volt" min_value="0" max_value="500"/>
+			<transducer name="Battery Level" unit="Percentage" min_value="0" max_value="100"/>
+		</meta>
+	</item>
+</items>

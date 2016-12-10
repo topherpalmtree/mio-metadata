@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item id="meta">
+		<meta type="adapter" name="Modbus Adapter">
+			<property name="Modbus Type" value="[RTU or TCP] (required)"/>
+			<property name="Serial Port" value="[path to serial file in case of ModbusRTU](optional)"/>
+			<property name="Baudrate" value="[Baudrate of serial in case of ModbusRTU](optional)"/>
+			<property name="Stop Bits" value="[Stop bits to use in case of ModbusRTU](optional)"/>
+			<property name="Domain" value="[Default domain in case of ModbusTCP](optional)"/>
+			<property name="Port" value="[Default domain port in case of ModbusTCP](optional)"/>
+		</meta>
+	</item>
+</items>

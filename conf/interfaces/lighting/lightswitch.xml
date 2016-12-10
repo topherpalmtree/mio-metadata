@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta>
+   <interface name="Light"/>
+   <transducer name= "Lighting State">
+        <map value="0" name="Off"/>
+        <map value="1" name="On"/>
+   </transducer>
+</meta>

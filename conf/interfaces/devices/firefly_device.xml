@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item id="meta">
+    <meta info="A firefly device template." xmlns="http://jabber.org/protocol/mio" type="interface" name="Firefly Device">
+       <transducer name-"RSSI" unit="dB">
+		    <property name-"dataLen" value="1"/> 
+		    <property name-"dataOfset" value="0"/> 
+        </transducer>
+        <transducer name="Firefly transducer"> 
+		<property name="dataLen" value="[Number of bytes data is in pcf packet] (required)"/>
+		<property name="dataOffset" value="[Where data starts in packet] (required)"/>
+        </transducer>   
+        <property value="Firefly Device" name="Type"/>
+        <property value="[Mac address of the firefly device] (required)" name="Mac Address"/>
+        <property value="[Channel of the firefly device] (required)" name="Channel"/>
+    </meta>
+</item>
+</items>

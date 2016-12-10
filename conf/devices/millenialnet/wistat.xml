@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item id="meta">
+<meta name="Wistat-IIIps" description="Pneumatic wireless thermostat" xmlns="http://jabber.org/protocol/mio">
+	<inteface name="Modbus Device"/>
+	<inteface name="Wireless"/>
+	<inteface name="Battery"/>
+	<inteface name="Thermostat"/>
+	<inteface name="Pneumatic Thermostat"/>
+	
+	<property name="RF Protocol" value="802.15.4"/>
+	<property name="Modbus Type" value="RTU"/>
+	<property name="Serial Path" value="RTU"/>
+	<property name="Baudrate" value="RTU"/>
+	<property name="Stop Bits" value="RTU"/>
+
+	<transducer name="Signal Strength" unit="dB" min_value="0" max_value="100"/>
+		<property name="Register Address" value=""/>
+		<property name="Register Value" value=""/>
+	</transducer>
+	<transducer name="Battery Voltage" unit="V" min_value="0" max_value="10"/>
+		<property name="Register Address" value=""/>
+		<property name="Register Value" value=""/>
+	</transducer>
+	<transducer name="Temperature Setpoint" unit="Celcius" min_value="0" max_value="100"/>
+		<property name="Register Address" value=""/>
+		<property name="Register Value" value=""/>
+	</transducer>
+	<transducer name="Temperature" unit="Celcius" min_value="0" max_value="100"/>
+		<property name="Register Address" />
+		<property name="Register Value" />
+	</transducer>
+	<transducer name="Requested Setpoint" unit="Celcius" min_value="0" max_value="100"/>
+		<property name="Register Address" />
+		<property name="Register Value" />
+	</transducer>
+	<transducer name="Branchline Pressure" unit="Celcius" min_value="0" max_value="100"/>
+		<property name="Register Address" />
+		<property name="Register Value" />
+	</transducer>
+	<transducer name="Branchline Setpoint" unit="Celcius" min_value="0" max_value="100"/>
+		<property name="Register Address" />
+		<property name="Register Value" />
+	</transducer>
+	<transducer name="Mode" unit="Celcius" min_value="0" max_value="100"/>
+		<property name="Register Address" />
+		<property name="Register Value" />
+	</transducer>
+	<transducer name="Error Status" unit="Celcius" min_value="0" max_value="100"/>
+		<property name="Register Address" />
+		<property name="Register Value" />
+	</transducer>
+</meta>
+</item>
+</items>

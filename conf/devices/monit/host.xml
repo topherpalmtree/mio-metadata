@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>		
+	<item id="meta">	
+		<meta name="Monit Host" type="gateway" xmlns="http://jabber.org/protocol/mio">
+			<interface name="Monit Adapter"/> 
+			<property name="host id" value="[] (required)"/>
+			<property name="Monit ID" value="integer" />
+			<property name="Monit User" value="string" />
+			<property name="Monit Password" value="string" />
+			<transducer name="Address" unit="IP Address" />
+			<transducer name="Address Out" unit="IP Address" />
+			<transducer name="Port Out" unit="int" />
+			<transducer name="Port In" unit="int" />
+			<transducer name="SSL In" unit="int" />
+			<transducer name="SSL Out" unit="int" />
+			<transducer name="Monit Version" unit="string" />
+			<transducer name="keepname" unit="string" />
+			<transducer name="description" unit="string"/>
+			<transducer name="skew" unit="s" />
+			<transducer name="poll" unit="s" />
+			<transducer name="last modified" unit="Date" />
+			<transducer name="num events" unit="count" />
+			<transducer name="num records" unit="count" />
+			<transducer name="num services" unit="count" />
+			<transducer name="cpu" unit="percentage" />
+			<transducer name="cpu count" unit="count" />
+			<transducer name="memory" unit="percentage" />
+			<transducer name="memory size" unit="kb" />
+			<transducer name="swap size" unit="kb" />
+			<transducer name="status" unit="string" />
+			<transducer name="monit start delay" unit="s" />
+			<transducer name="uptime" unit="string" />
+		</meta>
+</item>
+
+</items>

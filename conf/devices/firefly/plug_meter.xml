@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item id="meta">
+    <meta info="A firefly plug meter for power sensing and actuation." xmlns="http://jabber.org/protocol/mio" type="device" name="Firefly Plug" timestamp="2015-04-03T18:31:45.510870-0400">
+	<transducer name-"RSSI" unit="dB">
+		    <property name-"dataLen" value="1"/> 
+		    <property name-"dataOfset" value="0"/> 
+        </transducer>
+	    <transducer unit="Hz" name="Frequency Meter">
+	    <property name="dataLen" value ="1"/>
+	    <property name="dataOffset" value ="20"/>
+	    </transducer>   
+	<transducer unit="Count" name="Uptime Counter">
+	    <property name="dataLen" value ="4"/>
+	    <property name="dataOffset" value ="2"/>
+	    </transducer>
+	    <transducer unit="Volt" name="RMS Voltmeter">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="7"/>
+	    </transducer>
+        <transducer unit="enum" interface="Socket State" name="Socket State">
+            <map value="0" name="Off"/>
+            <map value="1" name="On"/>
+	    <property name="dataLen" value ="1"/>
+	    <property name="dataOffset" value ="20"/>
+        </transducer>
+        <transducer unit="A" interface="Max Current" name="rms current high">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="21"/>
+        </transducer>
+        <transducer unit="A" interface="Min Current" name="rms current low">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="9"/>
+        </transducer>
+	<transducer unit="W/hr" interface="Energy Meter" name="Energy Meter">
+	    <property name="dataLen" value ="6"/>
+	    <property name="dataOffset" value ="14"/>
+        </transducer>
+	<transducer unit="W" interface="True Power" name="true power high">
+	    <property name="dataLen" value ="3"/>
+	    <property name="dataOffset" value ="23"/>
+        </transducer>
+	<transducer unit="W" interface="True Power" name="true power low">
+	    <property name="dataLen" value ="3"/>
+	    <property name="dataOffset" value ="11"/>
+        </transducer>
+	<transducer unit="A" name="p2p current low">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="37"/>
+        </transducer>
+	<transducer unit="A" name="p2p current high">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="43"/>
+        </transducer>
+        <property value="Firefly Plug Meter" name="Device Type"/>
+    </meta>
+</item>
+</items>

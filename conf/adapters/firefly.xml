@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>		
+	<item id="meta">	<meta name="Firefly Adapter" type="adapter" xmlns="http://jabber.org/protocol/mio">
+			<interface name="Firefly Adapter"/> 
+			<property name="Serial Path" value="[Serial port path | Default /dev/ttyUSB0] (required)"/>
+			<property name="Channel" value="[802.15.4 Communication Channel | Default 25] (required)"/>
+			<property name="AES Key" value="[AES encryption key for network communication] (required)"/>
+			<property name="Address" value="[IP address of the slipserver | Default 127.0.0.1] (required)"/>
+		</meta>
+</item>
+
+</items>

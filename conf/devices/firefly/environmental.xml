@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item id="meta">
+    <meta info="A Firefly wireless sensing device." xmlns="http://jabber.org/protocol/mio" type="device" name="Firefly Environmental Sensor" timestamp="2015-04-03T18:31:47.179921-0400">
+	    <transducer unit="Voltage" interface="Battery" name="Battery Level">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="2"/>
+	    </transducer>
+	    <transducer maxValue="1024" minValue="0" unit="Lux" name="Light Meter">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="4"/>
+	    </transducer>
+	    <transducer maxValue="100" minValue="-50" unit="Celcius" name="Thermometer Analog">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="6"/>
+	    </transducer>    
+	    <transducer maxValue="3" minValue="-3" unit="G" name="Accelerometer X">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="8"/>
+	    </transducer>
+	    <transducer maxValue="3" minValue="-3" unit="G" name="Accelerometer Y">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="10"/>
+	    </transducer>
+	    <transducer maxValue="3" minValue="-3" unit="G" name="Accelerometer Z">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="12"/>
+	    </transducer>
+	    <transducer maxValue="100" minValue="0" unit="SPL" name="Microphone">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="14"/>
+	    </transducer>
+	    <transducer maxValue="100" minValue="0"  unit="kg/kg" name="Humidity Sensor">
+	    <property name="dataLen" value ="4"/>
+	    <property name="dataOffset" value ="16"/>
+	    </transducer>
+	    <transducer maxValue="100" minValue="0" unit="C" name="Thermometer Digital">
+	    <property name="dataLen" value ="4"/>
+	    <property name="dataOffset" value ="20"/>
+	    </transducer>
+	    <transducer maxValue="100" minValue="0" unit="hpa" name="Barometer">
+	    <property name="dataLen" value ="4"/>
+	    <property name="dataOffset" value ="24"/>
+	    </transducer>
+	    <transducer maxValue="100" minValue="0"  unit="Intensity" name="Motion Sensor">
+	    <property name="dataLen" value ="2"/>
+	    <property name="dataOffset" value ="28"/>
+	    </transducer>
+    <property value="Firefly Environmental Sensor" name="Type"/>
+    <property value="[Mac Address of the firefly device]" name="MAC Address"/>
+    <property value="[802.15.4 Channel of the firefly device]" name="Channel"/>
+</meta>
+</item>
+</items>
+

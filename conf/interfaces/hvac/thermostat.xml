@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item name="meta">
+		<meta xmlns="http://jabber.org/protocol/mio" interface="thermostat">
+			<transducer name="Temperature" unit="Celcius" min_value="-50" max_value="60"/>
+			<transducer name="Temperature Setpoint" unit="Celcius" min_value="-50" max_value="60"/>
+			<transducer name="Mode" unit="Enum" >
+				<enum />
+			</transducer>
+		</meta>
+	</item>
+</items>

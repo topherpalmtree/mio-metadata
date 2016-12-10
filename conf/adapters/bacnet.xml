@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item id="meta">
+		<meta type="adapter" name="Bacnet Adapter" xmlns="http://jabber.org/protocol/mio">
+			<interface name="BACnet Adapter"/>
+			<property name="Address" value="[Adapter BACnet Address] (required)"/>
+			<property name="Port" value="[Adapter BACnet Address | Default 47808] (required)"/>
+		</meta>
+	</item>
+</items>

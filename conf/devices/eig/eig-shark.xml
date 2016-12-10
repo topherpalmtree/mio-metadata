@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+<item id="meta">
+<meta info="EIG Shark power meeter." xmlns="http://jabber.org/protocol/mio" type="device" name="EIG Shark" timestamp="2015-05-26T18:31:47.179921-0400">
+	<interface name="Modbus Device"/>
+	<interface name="Energy Meter"/>
+	
+	<property name="RF Protocol" value="802.11"/>
+	<property name="Modbus Type" value="TCP"/>
+        <property name="Port" value="502"/>
+	<transducer name="Power" unit="Watts" minValue="0" maxValue="1000">
+		<property name="Register Address" value="1018"/>
+		<property name="Register Value" value="FLOAT"/>
+		<property name="Register Length" value="32"/>
+	</transducer>
+	<transducer name="Reactive Power" unit="Volt-Ampere reactive" minValue="0" maxValue="1000">
+		<property name="Register Address" value="1020"/>
+		<property name="Register Value" value="FLOAT"/>
+		<property name="Register Length" value="32"/>
+	</transducer>
+	<transducer name="Apparent Power" unit="Volt-Ampere" minValue="0" maxValue="1000">
+		<property name="Register Address" value="1022"/>
+		<property name="Register Value" value="FLOAT"/>
+		<property name="Register Length" value="32"/>
+	</transducer>
+	<transducer name="Power Factor" unit="Watts / Volt-Ampere" minValue="-1" maxValue="1">
+		<property name="Register Address" value="1024"/>
+		<property name="Register Value" value="FLOAT"/> 
+                <property name="Register Length" value="32"/>
+	</transducer>
+</meta>
+</item>
+</items>

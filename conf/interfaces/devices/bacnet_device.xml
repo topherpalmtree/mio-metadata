@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item id="meta">
+		<meta name="BACnet Device" type="interface" xmlns="http://jabber.org/protocol/mio">
+			<interface name="BACnet Device"/>
+			<property name="Type" value="BACnetIP Device (requried)"/>
+			<property name="BACnet ID" value="[BACnet ID of Device] (required)"/>
+			<property name="Domain" value="[Domain or address of BACnet device] (required)"/>
+			<transducer>
+				<property name="Object ID" value="[Object ID of object associated with transducer] (required)"/>
+				<property name="Object Type" value="[Object Type of object associated with transducer] (optional)"/>
+				<property name="Object Name" value="[Name of object associated with transducer] (optional)"/>
+			</transducer>
+		</meta>
+	</item>
+</items>

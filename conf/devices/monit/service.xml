@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>		
+	<item id="meta">	
+		<meta name="Monit Service" type="device" xmlns="http://jabber.org/protocol/mio">
+			<interface name="Monit Adapter"/> 
+			<property name="service index" value="[service id] (required) "/>
+			<property name="service name" value="[service name] (required)"/>
+			<property name="host index" value="[id of host that monitors this service] (required)"/>
+			<transducer name="monit type" unit="enum">
+				<enum name="Filesystem" value="0"/> 
+				<enum name="Directory" value="1"/> 
+				<enum name="File" value="2"/> 
+				<enum name="Process" value="3"/> 
+				<enum name="Remote Host" value="4"/> 
+				<enum name="System" value="5"/> 
+				<enum name="FIFO" value="6"/> 
+				<enum name="Program" value="7"/> 
+			</transducer> 
+			<transducer name="monit type id" unit="string"/>
+			<transducer name="event count" unit="count"/>
+			<transducer name="monitor state" unit="enum">
+				<enum name="Off" value="0"/> 
+				<enum name="On" value="1"/> 
+				<enum name="Initializing" value="2"/> 
+			</transducer>
+			<transducer name="status" unit="enum">
+				<enum name="Off" value="0"/> 
+				<enum name="On" value="1"/> 
+				<enum name="Initializing" value="2"/> 
+			</transducer>
+			<transducer name="monitor mode" unit="enum">
+				<enum name="Active" value="0"/> 
+				<enum name="Passive" value="1"/> 
+				<enum name="Manual" value="2"/> 
+			</transducer>
+			<transducer name="led status" unit ="enum">
+				<enum name="Red" value="0"/> 
+				<enum name="Orange" value="1"/> 
+				<enum name="Green" value="2"/> 
+				<enum name="Gray" value="3"/> 
+				<enum name="Passive" value="1"/> 
+				<enum name="Manual" value="2"/> 
+			</transducer>
+		</meta>
+</item>
+
+</items>

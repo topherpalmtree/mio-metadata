@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item>
+		<meta name="Wireless" type="interface" xmlns="http://jabber.org/protocol/mio">
+			<interface name="Wireless"/>
+			<transducer name="Signal Strength" unit=""/>
+			<property name="RF Protocol" value="[RF protocol used Wifi, 802.15.4,  | ] (optional)"/>
+		</meta>
+	</item>
+</items>
