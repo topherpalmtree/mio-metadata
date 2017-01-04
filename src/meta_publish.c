@@ -71,9 +71,10 @@ args_t* _parse_args(int argc, char **argv)
     return args;
 }
 
-static int32_t local_parse_xml(char* xml_file,void (*start_handler)(void *data, const char *element, const char **attribute),
-                         void (*end_handler)(void *data, const char *el),  XML_CharacterDataHandler
-                         data_handler, void* parser_data)
+static int32_t local_parse_xml(char* xml_file,
+		void (*start_handler)(void *data, const char *element, const char **attribute),
+		void (*end_handler)(void *data, const char *el),  XML_CharacterDataHandler
+                data_handler, void* parser_data)
 {
     int32_t buff_size = 512, err, done = 0, break_out = 0;
     char buff[512], *ret;
@@ -117,7 +118,7 @@ int main(int argc, char **argv)
     int err;
     args_t *args;
     mio_conn_t *conn;
-    mio_stanza_t *meta_item;
+    //mio_stanza_t *meta_item;
     mio_response_t *merge_response, *meta_src_response;
     mio_meta_t *meta_src;
     mio_packet_t *packet;
@@ -144,10 +145,10 @@ int main(int argc, char **argv)
         ( (mio_packet_t*) meta_src_response -> response) -> payload = mio_meta_new();
         mio_data = mio_xml_parser_data_new();
         mio_data ->response = meta_src_response;
-        err = mio_xml_parse(conn,args->path, xml_data, mio_XMLstart_pubsub_meta_receive,
-        		mio_XMLString_geoloc);
-        //err = local_parse_xml(args->path, mio_XMLstart_pubsub_meta_receive,
-         //               endElement, mio_XMLString_geoloc, mio_data);
+        //err = mio_xml_parse(conn, args->path, mio_data, mio_XMLstart_pubsub_meta_receive,
+        		//mio_XMLString_geoloc);
+        err = local_parse_xml(args->path, mio_XMLstart_pubsub_meta_receive,
+                       endElement, mio_XMLString_geoloc, mio_data);
     } else
     {
         err = mio_meta_query(conn,args->node,meta_src_response);

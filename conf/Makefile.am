@@ -1,12 +1,10 @@
 templateconfdir=$(sysconfdir)/mio/template
 
 adapterstemplateconfdir=$(templateconfdir)/adapters/
-adapterstemplateconf_DATA = adapters/bacnet.xml adapters/firefly.xml adapters/modbus.xml adapters/phillips_gateway.xml adapters/pup.xml  
+
+adapterstemplateconf_DATA = adapters/bacnet.xml adapters/firefly.xml adapters/modbus.xml adapters/phillips_gateway.xml #adapters/pup.xml  
 
 devicesconfdir=$(templateconfdir)/devices/
-
-automatrixconfdir=$(devicesconfdir)/american-automatrix
-automatrixconf_DATA = devices/american-automatrix/DX1.xml
 
 eigconfdir=$(devicesconfdir)/eig
 eigconf_DATA = devices/eig/eig-shark.xml
@@ -19,7 +17,6 @@ fireflyconf_DATA = devices/firefly/gpio.xml devices/firefly/environmental.xml de
 
 lutronconfdir=$(devicesconfdir)/lutron
 lutronconf_DATA = devices/lutron/quantum.xml
-
 
 millenialnetconfdir=$(devicesconfdir)/millenialnet
 millenialnetconf_DATA = devices/millenialnet/wistat.xml

@@ -31,3 +31,24 @@
 # Debug files
 *.dSYM/
 *.su
+
+*.in
+*.m4
+
+# Extras
+autom4te.cache
+compile
+configure
+config.log
+config.status
+missing
+install-sh
+source/.deps/
+src/Makefile
+src/Makefile.in
+src/meta_publish
+src/mio_meta_tool
+ar-lib
+Makefile
+conf/Makefile
+depcomp
